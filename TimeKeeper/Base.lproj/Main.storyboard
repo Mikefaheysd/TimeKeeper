@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsS-Ds-fCv">
+                                <rect key="frame" x="119" y="20" width="362" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter the time you arrived at work">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="b2V-ew-U6f">
+                                <rect key="frame" x="140" y="56" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="473052683.83423799">
+                                    <!--2015-12-29 03:31:23 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-9r-WCa">
+                                <rect key="frame" x="268" y="419" width="64" height="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1O-vJ-aX8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="9" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bxg-VV-sfA">
+                                <rect key="frame" x="284" y="305" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ff-vq-4D4">
+                                <rect key="frame" x="286" y="343" width="27.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length of shift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4g-3z-Xdc">
+                                <rect key="frame" x="144" y="309" width="111" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length of lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0h-lx-GPJ">
+                                <rect key="frame" x="144" y="347" width="119.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-lw-twW">
+                                <rect key="frame" x="335" y="309" width="43.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spN-Dv-dBB">
+                                <rect key="frame" x="335" y="347" width="43.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom lunch" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3s-Pw-W2U">
+                                <rect key="frame" x="247" y="394" width="106" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VxT-BQ-xek">
+                                <rect key="frame" x="385.5" y="343" width="38.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRS-sT-Jfs">
+                                <rect key="frame" x="433" y="347" width="61" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y3s-Pw-W2U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Lk-Uo-uMR"/>
+                            <constraint firstItem="s4g-3z-Xdc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="19.25" id="2ZH-cM-lwV"/>
+                            <constraint firstItem="0fc-9r-WCa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="134" id="3hd-vP-xJo"/>
+                            <constraint firstItem="b2V-ew-U6f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-136" id="AWo-dc-7CM"/>
+                            <constraint firstItem="Bxg-VV-sfA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="Af4-Kh-l3k"/>
+                            <constraint firstItem="VxT-BQ-xek" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="104.75" id="BEx-uY-7Ra"/>
+                            <constraint firstItem="UsS-Ds-fCv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Br0-7W-3ga"/>
+                            <constraint firstItem="Bxg-VV-sfA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="Em7-aM-WQW"/>
+                            <constraint firstItem="b2V-ew-U6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FaX-TL-0bb"/>
+                            <constraint firstItem="PRS-sT-Jfs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="57.25" id="IHg-NR-AIc"/>
+                            <constraint firstItem="spN-Dv-dBB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="57.25" id="KcL-Jn-x0d"/>
+                            <constraint firstItem="5Ff-vq-4D4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="58" id="NTh-kB-K57"/>
+                            <constraint firstItem="bg0-lw-twW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="56.75" id="PPH-Rj-SRw"/>
+                            <constraint firstItem="bg0-lw-twW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="19.25" id="Pdy-Ce-9ui"/>
+                            <constraint firstItem="spN-Dv-dBB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="56.75" id="ZGx-G9-ScX"/>
+                            <constraint firstItem="l0h-lx-GPJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-96.25" id="egr-cw-wsT"/>
+                            <constraint firstItem="UsS-Ds-fCv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-266" id="fkE-dT-wNg"/>
+                            <constraint firstItem="l0h-lx-GPJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="57.25" id="gc2-1E-gGa"/>
+                            <constraint firstItem="5Ff-vq-4D4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-0.25" id="nF3-Nv-xvc"/>
+                            <constraint firstItem="s4g-3z-Xdc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100.5" id="sRf-CF-H2e"/>
+                            <constraint firstItem="Bxg-VV-sfA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="v6i-fY-oq9"/>
+                            <constraint firstItem="Y3s-Pw-W2U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="104.25" id="xG5-tq-8xu"/>
+                            <constraint firstItem="0fc-9r-WCa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xLS-vB-Gya"/>
+                            <constraint firstItem="PRS-sT-Jfs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="163.25" id="xeQ-Jz-yZ0"/>
+                            <constraint firstItem="Bxg-VV-sfA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="yAR-EA-MS9"/>
+                            <constraint firstItem="VxT-BQ-xek" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="58" id="zc8-TM-39h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="0fc-9r-WCa" id="ja5-GF-4Ag"/>
+                        <outlet property="customLunchLabel" destination="Y3s-Pw-W2U" id="Koe-gs-t65"/>
+                        <outlet property="lengthOfLunchLabel" destination="l0h-lx-GPJ" id="DLR-kj-VhM"/>
+                        <outlet property="lengthOfShiftLabel" destination="s4g-3z-Xdc" id="Lzk-mc-y3k"/>
+                        <outlet property="lunchLength" destination="5Ff-vq-4D4" id="dob-in-q3C"/>
+                        <outlet property="lunchLengthHoursLabel" destination="spN-Dv-dBB" id="RjV-0K-v8h"/>
+                        <outlet property="lunchMinutesLenghtLabel" destination="PRS-sT-Jfs" id="Gmc-ld-LxL"/>
+                        <outlet property="lunchMinutesLength" destination="VxT-BQ-xek" id="07W-Jg-uEv"/>
+                        <outlet property="myDatePicker" destination="b2V-ew-U6f" id="gc9-VU-ula"/>
+                        <outlet property="shiftLength" destination="Bxg-VV-sfA" id="iqP-fB-w3g"/>
+                        <outlet property="shiftLengthHoursLabel" destination="bg0-lw-twW" id="vwB-5e-Daa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="389"/>
+        </scene>
+    </scenes>
+</document>
